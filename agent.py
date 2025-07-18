@@ -31,19 +31,19 @@ async def entrypoint(ctx: agents.JobContext):
         stt=deepgram.STT(
             model="nova-3",
             language="multi",
-            api_key="c5b394d51d34c7cb0be0cb0b5f4ab649e12f0805"
+            
             ),
             
          llm=google.LLM(
         model="gemini-2.0-flash-exp",
         temperature=0.8,
-        api_key="AIzaSyBtG2deAz3H_hpsOl5v-lIM88EZqYoXXOo"
+        
     ),
     
         tts=cartesia.TTS(
             model="sonic-2",
             voice="f786b574-daa5-4673-aa0c-cbe3e8534c02",
-            api_key="sk_car_Q5Wp6j1jQmx5MJWxnAKuxC"
+        
             ),
         vad=silero.VAD.load()
         # turn_detection=MultilingualModel(),
